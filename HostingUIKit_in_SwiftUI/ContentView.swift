@@ -20,7 +20,7 @@ struct ContentView: View {
             
             HStack {
                 Text("0")
-                SliderChangeView(currentValue: $currentValue, opacity: currentValue)
+                SliderChangeView(currentValue: $currentValue, opacity: computeScore())
                 Text("100")
             }
             .padding()
