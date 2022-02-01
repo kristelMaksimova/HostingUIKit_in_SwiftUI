@@ -2,7 +2,7 @@
 //  HostingUIKit_in_SwiftUIApp.swift
 //  HostingUIKit_in_SwiftUI
 //
-//  Created by Kristi on 31.01.2022.
+//  Created by Kristel Maximova on 31.01.2022.
 //
 
 import SwiftUI

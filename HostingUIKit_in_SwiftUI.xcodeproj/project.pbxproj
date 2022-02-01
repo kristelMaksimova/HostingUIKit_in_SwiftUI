@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2044158327A9918900F35088 /* SliderChangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2044158227A9918900F35088 /* SliderChangeView.swift */; };
+		2044158727A9968300F35088 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2044158627A9968300F35088 /* ButtonView.swift */; };
 		209F892A27A8623400CA6154 /* HostingUIKit_in_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209F892927A8623400CA6154 /* HostingUIKit_in_SwiftUIApp.swift */; };
 		209F892C27A8623400CA6154 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209F892B27A8623400CA6154 /* ContentView.swift */; };
 		209F892E27A8623700CA6154 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 209F892D27A8623700CA6154 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2044158227A9918900F35088 /* SliderChangeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderChangeView.swift; sourceTree = "<group>"; };
+		2044158627A9968300F35088 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		209F892627A8623400CA6154 /* HostingUIKit_in_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HostingUIKit_in_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		209F892927A8623400CA6154 /* HostingUIKit_in_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingUIKit_in_SwiftUIApp.swift; sourceTree = "<group>"; };
 		209F892B27A8623400CA6154 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +57,8 @@
 			children = (
 				209F892927A8623400CA6154 /* HostingUIKit_in_SwiftUIApp.swift */,
 				209F892B27A8623400CA6154 /* ContentView.swift */,
+				2044158227A9918900F35088 /* SliderChangeView.swift */,
+				2044158627A9968300F35088 /* ButtonView.swift */,
 				209F892D27A8623700CA6154 /* Assets.xcassets */,
 				209F892F27A8623700CA6154 /* Preview Content */,
 			);
@@ -138,7 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				209F892C27A8623400CA6154 /* ContentView.swift in Sources */,
+				2044158727A9968300F35088 /* ButtonView.swift in Sources */,
 				209F892A27A8623400CA6154 /* HostingUIKit_in_SwiftUIApp.swift in Sources */,
+				2044158327A9918900F35088 /* SliderChangeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
