@@ -9,39 +9,35 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var targetValue = Int.random(in: 0...100)
-    @State private var currentValue = Int.random(in: 0...100)
-    @State private var alertPresented = false
+    @State private var targetValue = Int.random(in: 1...100)
+    @State private var currentValue = 50.0
+    @State private var showAlert = false
     
     var body: some View {
         VStack {
-            Text("Подвиньте слайдер, как можно ближе к: \(targetValue)")
-                .padding()
+            GameSlider(
+                currentValue: $currentValue,
+                targetValue: targetValue,
+                color: .red,
+                alpha: computeScore()
+            )
             
-            HStack {
-                Text("0")
-                SliderChangeView(currentValue: $currentValue, opacity: computeScore())
-                Text("100")
+            Button("Проверь меня!") {
+                showAlert = true
             }
             .padding()
+            .alert("Your Score", isPresented: $showAlert, actions: {}) {
+                Text("\(computeScore())")
+            }
             
-            ButtonView(title: "Проверь меня!",
-                       action: {alertPresented.toggle()}
-            )
-                .alert("Your Score", isPresented: $alertPresented, actions: {}) {
-                    Text(String(computeScore()))
-                }
-                .padding()
-            
-            ButtonView(title: "Начать заново",
-                       action: {targetValue = Int.random(in: 0...100)}
-            )
+            Button("Начать заново") {
+                targetValue = Int.random(in: 1...100)
+            }
         }
     }
     
-    
     private func computeScore() -> Int {
-        let difference = abs(targetValue - currentValue)
+        let difference = abs(targetValue - lround(currentValue))
         return 100 - difference
     }
 }
